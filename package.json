@@ -1,7 +1,7 @@
 {
-  "name": "typedoc-default-themes",
-  "description": "Default themes for TypeDoc.",
-  "version": "0.12.4",
+  "name": "typedoc-darker-theme",
+  "description": "A darker theme for typedoc.",
+  "version": "1.0.0",
   "homepage": "https://typedoc.org/",
   "main": "bin/plugin.js",
   "files": [
@@ -15,7 +15,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/TypeStrong/typedoc-default-themes.git"
+    "url": "git://github.com/Ayfri/typedoc-darker-theme.git"
   },
   "bugs": {
     "url": "https://github.com/TypeStrong/TypeDoc/issues"
