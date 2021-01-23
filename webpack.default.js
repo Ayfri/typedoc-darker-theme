@@ -5,7 +5,7 @@ const {merge} = require('webpack-merge');
 const commonConfig = require('./webpack.common');
 
 const config = {
-	name: 'Default Theme',
+	name: 'Darker Theme',
 
 	output: {
 		path: path.resolve(__dirname, 'bin', 'default'),
