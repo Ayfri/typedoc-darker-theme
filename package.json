@@ -10,7 +10,7 @@
   ],
   "scripts": {
     "build": "webpack",
-    "lint": "prettier --check .",
+    "lint": "prettier --write .",
     "prepublishOnly": "npm run build"
   },
   "repository": {

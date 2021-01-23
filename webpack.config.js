@@ -1,3 +1,3 @@
-const defaultThemeConfig = require("./webpack.default");
+const defaultThemeConfig = require('./webpack.default');
 
 module.exports = [defaultThemeConfig];
