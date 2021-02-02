@@ -24,7 +24,10 @@ export let pointerUp: string = 'mouseup';
 /**
  * Position the pointer was pressed at.
  */
-export const pointerDownPosition: Point = {x: 0, y: 0};
+export const pointerDownPosition: Point = {
+	x: 0,
+	y: 0,
+};
 
 /**
  * Should the next click on the document be supressed?

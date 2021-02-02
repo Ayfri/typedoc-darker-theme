@@ -1,11 +1,10 @@
+import '../../css/main.sass';
 import {Application, registerComponent} from './typedoc/Application';
+import {Filter} from './typedoc/components/Filter';
 import {MenuHighlight} from './typedoc/components/MenuHighlight';
 import {initSearch} from './typedoc/components/Search';
 import {Signature} from './typedoc/components/Signature';
 import {Toggle} from './typedoc/components/Toggle';
-import {Filter} from './typedoc/components/Filter';
-
-import '../../css/main.sass';
 
 initSearch();
 

@@ -1,5 +1,5 @@
-import {debounce} from '../utils/debounce';
 import {Index} from 'lunr';
+import {debounce} from '../utils/debounce';
 
 interface IDocument {
 	id: number;
