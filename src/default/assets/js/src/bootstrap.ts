@@ -13,9 +13,9 @@ registerComponent(Signature, '.tsd-signatures');
 registerComponent(Toggle, 'a[data-toggle]');
 
 if (Filter.isSupported()) {
-    registerComponent(Filter, '#tsd-filter');
+	registerComponent(Filter, '#tsd-filter');
 } else {
-    document.documentElement.classList.add('no-filter');
+	document.documentElement.classList.add('no-filter');
 }
 
 const app: Application = new Application();
