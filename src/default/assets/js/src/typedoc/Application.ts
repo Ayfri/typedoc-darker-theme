@@ -18,8 +18,8 @@ const components: IComponent[] = [];
  */
 export function registerComponent(constructor: IComponent['constructor'], selector: string) {
 	components.push({
-		selector: selector,
-		constructor: constructor,
+		selector:    selector,
+		constructor: constructor
 	});
 }
 

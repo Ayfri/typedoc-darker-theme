@@ -71,7 +71,7 @@ export function initSearch() {
 	});
 
 	const state: SearchState = {
-		base: searchEl.dataset.base + '/',
+		base: searchEl.dataset.base + '/'
 	};
 
 	bindEvents(searchEl, results, field, state);
@@ -227,8 +227,8 @@ const SPECIAL_HTML = {
 	'&': '&amp;',
 	'<': '&lt;',
 	'>': '&gt;',
-	"'": '&#039;',
-	'"': '&quot;',
+	'\'': '&#039;',
+	'"': '&quot;'
 } as const;
 
 function escapeHtml(text: string) {

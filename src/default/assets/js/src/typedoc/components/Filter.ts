@@ -20,7 +20,8 @@ abstract class FilterItem<T> {
 		}
 	}
 
-	protected initialize() {}
+	protected initialize() {
+	}
 
 	protected abstract handleValueChange(oldValue: T, newValue: T): void;
 

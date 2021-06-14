@@ -70,9 +70,9 @@ export class Viewport extends EventTarget {
 	triggerResize() {
 		const event = new CustomEvent('resize', {
 			detail: {
-				width: this.width,
-				height: this.height,
-			},
+				width:  this.width,
+				height: this.height
+			}
 		});
 
 		this.dispatchEvent(event);
@@ -87,9 +87,9 @@ export class Viewport extends EventTarget {
 
 		const event = new CustomEvent('resize', {
 			detail: {
-				width: this.width,
-				height: this.height,
-			},
+				width:  this.width,
+				height: this.height
+			}
 		});
 
 		this.dispatchEvent(event);
@@ -103,8 +103,8 @@ export class Viewport extends EventTarget {
 
 		const event = new CustomEvent('scroll', {
 			detail: {
-				scrollTop: this.scrollTop,
-			},
+				scrollTop: this.scrollTop
+			}
 		});
 
 		this.dispatchEvent(event);
@@ -116,7 +116,7 @@ export class Viewport extends EventTarget {
 	 */
 	hideShowToolbar() {
 		const isShown = this.showToolbar;
-        this.showToolbar = this.lastY >= this.scrollTop || this.scrollTop <= 0;
+		this.showToolbar = this.lastY >= this.scrollTop || this.scrollTop <= 0;
 		if (isShown !== this.showToolbar) {
 			this.toolbar.classList.toggle('tsd-page-toolbar--hide');
 			this.secondaryNav.classList.toggle('tsd-navigation--toolbar-hide');

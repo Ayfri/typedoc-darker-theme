@@ -1,39 +1,39 @@
 // Base format for the navigation parts.
 //
 =INDENT($DEPTH, $BASE, $STEP, $PROGRESS:$DEPTH)
-    @if $PROGRESS > 0
-        & li
-            +INDENT($DEPTH, $BASE, $STEP, $PROGRESS - 1)
-    @else
-        & a
-            padding-left: #{($BASE + $STEP * ($DEPTH - 1))}px
+	@if $PROGRESS > 0
+		& li
+			+INDENT($DEPTH, $BASE, $STEP, $PROGRESS - 1)
+	@else
+		& a
+			padding-left: #{($BASE + $STEP * ($DEPTH - 1))}px
 
 =INDENTS($COUNT, $BASE, $STEP)
-    @for $DEPTH from 1 through $COUNT
-        +INDENT($DEPTH, $BASE, $STEP)
+	@for $DEPTH from 1 through $COUNT
+		+INDENT($DEPTH, $BASE, $STEP)
 
 .tsd-navigation
-    margin: 0 0 0 40px
+	margin: 0 0 0 40px
 
-    a
-        display: block
-        padding-top: 2px
-        padding-bottom: 2px
-        border-left: 2px solid transparent
-        color: var(--color-text)
-        text-decoration: none
-        transition: border-left-color 0.1s
+	a
+		display: block
+		padding-top: 2px
+		padding-bottom: 2px
+		border-left: 2px solid transparent
+		color: var(--color-text)
+		text-decoration: none
+		transition: border-left-color 0.1s
 
-        &:hover
-            text-decoration: underline
+		&:hover
+			text-decoration: underline
 
-    ul
-        margin: 0
-        padding: 0
-        list-style: none
+	ul
+		margin: 0
+		padding: 0
+		list-style: none
 
-    li
-        padding: 0
+	li
+		padding: 0
 
 
 // Primary part of the navigation containing the available modules.
@@ -53,33 +53,33 @@
 // </nav>
 //
 .tsd-navigation.primary
-    padding-bottom: 40px
+	padding-bottom: 40px
 
-    a
-        display: block
-        padding-top: 6px
-        padding-bottom: 6px
+	a
+		display: block
+		padding-top: 6px
+		padding-bottom: 6px
 
-    ul
-        +INDENTS(6, 5, 20)
+	ul
+		+INDENTS(6, 5, 20)
 
-    > ul
-        border-bottom: 1px solid var(--color-panel-divider)
+	> ul
+		border-bottom: 1px solid var(--color-panel-divider)
 
-    li
-        border-top: 1px solid var(--color-panel-divider)
+	li
+		border-top: 1px solid var(--color-panel-divider)
 
-        &.current > a
-            font-weight: bold
+		&.current > a
+			font-weight: bold
 
-        &.label span
-            display: block
-            padding: 20px 0 6px 5px
-            color: var(--color-menu-label)
+		&.label span
+			display: block
+			padding: 20px 0 6px 5px
+			color: var(--color-menu-label)
 
-        &.globals + li > span,
-        &.globals + li > a
-            padding-top: 20px
+		&.globals + li > span,
+		&.globals + li > a
+			padding-top: 20px
 
 
 // Secondary part of the navigation containing the table of contents
@@ -110,39 +110,39 @@
 // </nav>
 //
 .tsd-navigation.secondary
-    max-height: calc(100vh - 1rem - #{$TOOLBAR_HEIGHT})
-    overflow: auto
-    position: -webkit-sticky
-    position: sticky
-    top: calc(.5rem + #{$TOOLBAR_HEIGHT})
-    transition: .3s
+	max-height: calc(100vh - 1rem - #{$TOOLBAR_HEIGHT})
+	overflow: auto
+	position: -webkit-sticky
+	position: sticky
+	top: calc(.5rem + #{$TOOLBAR_HEIGHT})
+	transition: .3s
 
-    &.tsd-navigation--toolbar-hide
-        max-height: calc(100vh - 1rem)
-        top: .5rem
+	&.tsd-navigation--toolbar-hide
+		max-height: calc(100vh - 1rem)
+		top: .5rem
 
-    ul
-        +INDENTS(6, 25, 20)
-        transition: opacity 0.2s
+	ul
+		+INDENTS(6, 25, 20)
+		transition: opacity 0.2s
 
-        &.current a
-            border-left-color: var(--color-panel-divider)
+		&.current a
+			border-left-color: var(--color-panel-divider)
 
-    li.focus > a,
-    ul.current li.focus > a
-        border-left-color: var(--color-menu-divider-focus)
+	li.focus > a,
+	ul.current li.focus > a
+		border-left-color: var(--color-menu-divider-focus)
 
-    li.current
-        margin-top: 20px
-        margin-bottom: 20px
-        border-left-color: var(--color-panel-divider)
+	li.current
+		margin-top: 20px
+		margin-bottom: 20px
+		border-left-color: var(--color-panel-divider)
 
-        > a
-            font-weight: bold
+		> a
+			font-weight: bold
 
 
 // Sticky menu setup
 //
 .menu-sticky-wrap
-    +size-md-lg
-        position: static
+	+size-md-lg
+		position: static

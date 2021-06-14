@@ -70,9 +70,9 @@ export class MenuHighlight extends Component {
 			if (!anchor || !link) return;
 
 			this.anchors.push({
-				link: link as HTMLElement,
-				anchor: anchor,
-				position: 0,
+				link:     link as HTMLElement,
+				anchor:   anchor,
+				position: 0
 			});
 		});
 
@@ -96,8 +96,8 @@ export class MenuHighlight extends Component {
 
 		const event = new CustomEvent('scroll', {
 			detail: {
-				scrollTop: Viewport.instance.scrollTop,
-			},
+				scrollTop: Viewport.instance.scrollTop
+			}
 		});
 		this.onScroll(event);
 	}

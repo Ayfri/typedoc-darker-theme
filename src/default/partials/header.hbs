@@ -53,9 +53,9 @@
 				</ul>
 			{{/if}}
 			<h1>{{#compact}}
-                {{#ifCond model.kindString "!==" "Project" }}
-                    {{model.kindString}}&nbsp;
-                {{/ifCond}}
+				{{#ifCond model.kindString "!==" "Project" }}
+					{{model.kindString}}&nbsp;
+				{{/ifCond}}
 				{{model.name}}
 				{{#if model.typeParameters}}
 					&lt;
