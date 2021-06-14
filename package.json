@@ -1,7 +1,7 @@
 {
 	"name": "typedoc-darker-theme",
 	"description": "A darker theme for typedoc.",
-	"version": "1.2.0",
+	"version": "1.2.1",
 	"homepage": "https://typedoc.org/",
 	"main": "bin/plugin.js",
 	"files": [
